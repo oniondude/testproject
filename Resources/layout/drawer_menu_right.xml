@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/right_drawer"
+    android:layout_height="match_parent"
+    android:layout_width="150dp"
+    android:orientation="vertical"
+    android:layout_gravity="end" 
+     android:background="#EAEAEA">
+   
+    <ListView android:id="@+id/right_drawer_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:divider="#666666"
+        android:dividerHeight="1dp"
+        android:layout_above="@+id/barcodeScannerButton" android:paddingLeft="5dp"/>
+<!-- 
+    <ImageButton
+        android:id="@+id/barcodeScannerButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circle_button"
+        android:contentDescription="@string/app_name"
+        android:padding="0dp"
+        android:src="@drawable/barcode_scanner" 
+        android:layout_above="@+id/dummyblank"/>
+    
+    <View
+        android:id="@+id/dummyblank"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" />-->
+
+</RelativeLayout>
+
+

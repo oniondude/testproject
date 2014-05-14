@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"  >
+ 
+<item android:id="@+id/option1" android:title="View Item" />
+ 
+<item android:id="@+id/option2" android:title="Update" />
+
+<item android:id="@+id/option1" android:title="Order" />
+ 
+<item android:id="@+id/option2" android:title="Change Price"  />
+ 
+</menu>

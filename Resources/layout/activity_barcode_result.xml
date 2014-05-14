@@ -1,0 +1,56 @@
+
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue_light"
+     >
+
+    
+        
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topIcons"
+            android:dividerHeight="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="40dp" android:paddingBottom="8dp" >
+
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/topIcons"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp" >
+
+            <ImageButton
+                android:id="@+id/searchButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_action_previous_item"
+                android:contentDescription="@string/app_name"
+                android:padding="0dp"  android:onClick="doBackPress"/>
+        </RelativeLayout>
+<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+           <ImageButton
+               android:id="@+id/barcodeScannerButton"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:background="@drawable/circle_button"
+               android:contentDescription="@string/app_name"
+               android:padding="0dp"
+               android:src="@drawable/barcode_scanner" 
+               android:layout_y="510dp"
+               android:layout_x="300dp"/>
+
+
+</AbsoluteLayout>

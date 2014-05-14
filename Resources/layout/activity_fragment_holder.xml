@@ -1,0 +1,36 @@
+<android.support.v4.widget.DrawerLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/drawer_layout"
+android:layout_width="match_parent"
+android:layout_height="match_parent" >
+ <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/blue_fb_bg"
+    android:layout_below="@+id/topIcons"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp" android:paddingBottom="8dp" 
+    android:id="@+id/frameLayout"/>
+
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative_layout_view_list">
+        <RelativeLayout
+            android:id="@+id/topIcons"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp" >
+
+        </RelativeLayout>
+	</RelativeLayout>
+	
+	<!-- Left navigation drawer -->
+	<include layout="@layout/drawer_menu_left"/>
+	<!-- Right navigation drawer -->
+	<include layout="@layout/drawer_menu_right"/>
+
+</android.support.v4.widget.DrawerLayout>

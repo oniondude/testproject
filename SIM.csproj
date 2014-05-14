@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{272978CD-18A6-4A5D-92C6-3E9E0B036B83}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SIM</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AssemblyName>SIM</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v4.3</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Support.v4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Activities\Login.cs" />
+    <Compile Include="Activities\HolderFragmentActivity.cs" />
+    <Compile Include="Adapters\LeftDrawerMenuAdapter.cs" />
+    <Compile Include="Listeners\NavigationDrawerToggleListener.cs" />
+    <Compile Include="Listeners\ExpandableChildClickListener.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Fragments\" />
+    <Folder Include="Activities\" />
+    <Folder Include="Adapters\" />
+    <Folder Include="Listeners\" />
+    <Folder Include="Utils\" />
+    <Folder Include="Models\" />
+    <Folder Include="Thirdparty\" />
+    <Folder Include="Resources\anim\" />
+    <Folder Include="Resources\drawable\" />
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-ldpi\" />
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Resources\layout\" />
+    <Folder Include="Resources\menu\" />
+    <Folder Include="Resources\values\" />
+    <Folder Include="Resources\values-sw600dp\" />
+    <Folder Include="Resources\values-sw720dp-land\" />
+    <Folder Include="Resources\values-v11\" />
+    <Folder Include="Resources\values-v14\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\grow_from_bottom.xml" />
+    <AndroidResource Include="Resources\anim\slide_down.xml" />
+    <AndroidResource Include="Resources\anim\slide_from_left_left.xml" />
+    <AndroidResource Include="Resources\anim\slide_from_left_right.xml" />
+    <AndroidResource Include="Resources\anim\slide_from_up_down.xml" />
+    <AndroidResource Include="Resources\anim\slide_from_up_up.xml" />
+    <AndroidResource Include="Resources\anim\slide_left.xml" />
+    <AndroidResource Include="Resources\anim\slide_right.xml" />
+    <AndroidResource Include="Resources\anim\slide_up.xml" />
+    <AndroidResource Include="Resources\drawable\actionbar_background.xml" />
+    <AndroidResource Include="Resources\drawable\button_blue_background.xml" />
+    <AndroidResource Include="Resources\drawable\button_blue_bg_normal.xml" />
+    <AndroidResource Include="Resources\drawable\button_blue_bg_pressed.xml" />
+    <AndroidResource Include="Resources\drawable\button_gray_background.xml" />
+    <AndroidResource Include="Resources\drawable\circle_button.xml" />
+    <AndroidResource Include="Resources\drawable\drawer_header_item.xml" />
+    <AndroidResource Include="Resources\drawable\form_blue_button_background.xml" />
+    <AndroidResource Include="Resources\drawable\form_login_background.xml" />
+    <AndroidResource Include="Resources\drawable\glossy_bluewhite_without_border_background.xml" />
+    <AndroidResource Include="Resources\drawable\glossy_white_with_border_background.xml" />
+    <AndroidResource Include="Resources\drawable\nav_bar_shadow.xml" />
+    <AndroidResource Include="Resources\drawable\row_item_background.xml" />
+    <AndroidResource Include="Resources\drawable\row_item_bg_normal.xml" />
+    <AndroidResource Include="Resources\drawable\row_item_bg_pressed.xml" />
+    <AndroidResource Include="Resources\drawable\row_main_item_background.xml" />
+    <AndroidResource Include="Resources\drawable\sim_edittext_background.xml" />
+    <AndroidResource Include="Resources\drawable\sim_spinner_background.xml" />
+    <AndroidResource Include="Resources\drawable\slide_down_blue_button_background.xml" />
+    <AndroidResource Include="Resources\drawable\slide_up_gray_button_background.xml" />
+    <AndroidResource Include="Resources\drawable\white_with_border_background.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_collapse.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_expand.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_expand_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_ic_action_about.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_ic_drawer.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_new.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_previous_item.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_search.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_submenu.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_add.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_administration.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_check_all.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_date_picker.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_delete.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_error.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_filter.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_inventory.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_lookups.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_print.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_refresh.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_search.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_shipping_receiving.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_uncheck_all.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_collapse.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_expand.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_expand_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_ic_action_about.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_ic_drawer.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_new.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_previous_item.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_search.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_submenu.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_add.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_administration.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_check_all.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_date_picker.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_delete.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_error.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_filter.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_inventory.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_lookups.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_print.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_refresh.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_search.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_shipping_receiving.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_uncheck_all.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_collapse.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_expand.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_expand_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_ic_action_about.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_ic_drawer.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_new.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_previous_item.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_search.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_submenu.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_add.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_administration.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_check_all.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_date_picker.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_delete.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_error.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_filter.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_inventory.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_lookups.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_print.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_refresh.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_search.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_shipping_receiving.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_uncheck_all.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\barcode_scanner.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_collapse.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_expand.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_expand_light.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_ic_action_about.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_ic_drawer.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_new.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_previous_item.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_search.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_add.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_administration.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_barcode_scanner.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_check_all.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_date_picker.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_delete.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_error.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_filter.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_inventory.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_lookups.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_print.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_refresh.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_search.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_shipping_receiving.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_uncheck_all.png" />
+    <AndroidResource Include="Resources\layout\activity_barcode_result.xml" />
+    <AndroidResource Include="Resources\layout\activity_drawer_menu.xml" />
+    <AndroidResource Include="Resources\layout\activity_fragment_holder.xml" />
+    <AndroidResource Include="Resources\layout\activity_inventory_adjustments_create.xml" />
+    <AndroidResource Include="Resources\layout\activity_inventory_adjustments_filter.xml" />
+    <AndroidResource Include="Resources\layout\activity_inventory_adjustment_add_item.xml" />
+    <AndroidResource Include="Resources\layout\activity_inventory_adjustment_update.xml" />
+    <AndroidResource Include="Resources\layout\activity_login.xml" />
+    <AndroidResource Include="Resources\layout\activity_main.xml" />
+    <AndroidResource Include="Resources\layout\activity_sequencing_add_location.xml" />
+    <AndroidResource Include="Resources\layout\drawer_menu_left.xml" />
+    <AndroidResource Include="Resources\layout\drawer_menu_right.xml" />
+    <AndroidResource Include="Resources\layout\fragment_list_view.xml" />
+    <AndroidResource Include="Resources\layout\fragment_main_view.xml" />
+    <AndroidResource Include="Resources\layout\generic_layout_view.xml" />
+    <AndroidResource Include="Resources\layout\im_added_row_item.xml" />
+    <AndroidResource Include="Resources\layout\line_list_group.xml" />
+    <AndroidResource Include="Resources\layout\line_list_group_item.xml" />
+    <AndroidResource Include="Resources\layout\line_tem_list.xml" />
+    <AndroidResource Include="Resources\layout\right_list_drawer_item.xml" />
+    <AndroidResource Include="Resources\layout\row_item_2_liner.xml" />
+    <AndroidResource Include="Resources\layout\row_item_3_liner.xml" />
+    <AndroidResource Include="Resources\layout\row_listview.xml" />
+    <AndroidResource Include="Resources\menu\barcode_result.xml" />
+    <AndroidResource Include="Resources\menu\drawer_menu.xml" />
+    <AndroidResource Include="Resources\menu\inventory_adjustments_create.xml" />
+    <AndroidResource Include="Resources\menu\inventory_adjustments_filter.xml" />
+    <AndroidResource Include="Resources\menu\inventory_adjustment_add_item.xml" />
+    <AndroidResource Include="Resources\menu\inventory_adjustment_update.xml" />
+    <AndroidResource Include="Resources\menu\list_view.xml" />
+    <AndroidResource Include="Resources\menu\login.xml" />
+    <AndroidResource Include="Resources\menu\main.xml" />
+    <AndroidResource Include="Resources\menu\popup_menu.xml" />
+    <AndroidResource Include="Resources\menu\sequencing_add_location.xml" />
+    <AndroidResource Include="Resources\values\array_strings.xml" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\values\strings.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values-sw600dp\dimens.xml" />
+    <AndroidResource Include="Resources\values-sw720dp-land\dimens.xml" />
+    <AndroidResource Include="Resources\values-v11\styles.xml" />
+    <AndroidResource Include="Resources\values-v14\colors.xml" />
+    <AndroidResource Include="Resources\values-v14\styles.xml" />
+  </ItemGroup>
+</Project>

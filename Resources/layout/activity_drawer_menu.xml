@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_dark"
+    android:orientation="vertical" 
+    android:layout_gravity="center_horizontal" android:layout_marginTop="30dp"  
+    >
+
+<TableRow
+    android:layout_marginBottom="1dp"
+    android:background="@color/gray"
+    android:onClick="doSlideFromRight"
+    android:paddingRight="50dp" 
+    android:paddingTop="10dp" 
+    android:paddingBottom="10dp">
+
+<ImageButton android:id="@+id/imagebutton0"
+android:src="@drawable/ic_action_previous_item"
+android:scaleType="fitXY"
+android:background="@null"
+android:padding="5dip"
+android:layout_width="42dp"
+android:layout_height="42dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="15dp"
+    android:textColor="@color/gray_dark"
+    android:text="Hide" 
+    android:paddingLeft="10dp" 
+    android:paddingTop="9dp"/>
+
+</TableRow>
+
+<TableRow android:background="@color/gray" 
+    		android:layout_marginBottom="1dp" android:paddingTop="10dp" 
+    android:paddingBottom="10dp">
+<ImageButton android:id="@+id/imagebutton1"
+android:src="@drawable/ic_inventory"
+android:scaleType="fitXY"
+android:background="@null"
+android:padding="5dip"
+android:layout_width="42dp"
+android:layout_height="42dp" />
+<TextView android:text="Manage Inventory"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="15dp"
+android:textColor="@color/gray_dark"
+android:paddingLeft="10dp" 
+android:paddingTop="9dp"/>
+</TableRow>
+<TableRow android:background="@color/gray"  
+    		android:layout_marginBottom="1dp" android:paddingTop="10dp" 
+    android:paddingBottom="10dp">
+<ImageButton android:id="@+id/imagebutton2"
+android:src="@drawable/ic_shipping_receiving"
+android:scaleType="fitXY"
+android:background="@null"
+android:padding="5dip"
+android:layout_width="42dp"
+android:layout_height="42dp" />
+<TextView android:text="Shipping/Receiving"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+android:textSize="15dp"
+android:textColor="@color/gray_dark" 
+android:paddingLeft="10dp"
+android:paddingTop="9dp"/>
+</TableRow>
+<TableRow android:background="@color/gray" 
+    		android:layout_marginBottom="1dp" android:paddingTop="10dp" 
+    android:paddingBottom="10dp">
+<ImageButton android:id="@+id/imagebutton3"
+android:src="@drawable/ic_administration"
+android:scaleType="fitXY"
+android:background="@null"
+android:padding="5dip"
+android:layout_width="42dp"
+android:layout_height="42dp"/>
+<TextView android:text="Administration"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" 
+android:textSize="15dp"
+android:textColor="@color/gray_dark"
+android:paddingLeft="10dp"
+android:paddingTop="9dp"/>
+</TableRow>
+<TableRow android:background="@color/gray"
+    		android:layout_marginBottom="1dp" android:paddingTop="10dp" 
+    android:paddingBottom="10dp">
+
+<ImageButton
+    android:id="@+id/imagebutton4"
+    android:layout_width="42dp"
+    android:layout_height="42dp"
+    android:background="@null"
+    android:padding="5dip"
+    android:scaleType="fitXY"
+    android:src="@drawable/ic_lookups" />
+
+<TextView android:text="Lookups/Search"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="15dp"
+android:textColor="@color/gray_dark" 
+android:paddingLeft="10dp"
+android:paddingTop="9dp"/>
+</TableRow>
+</TableLayout>

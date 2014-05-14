@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="module_main">
+        <item>Inventory Management</item>
+        <item>Shipping and Receiving</item>
+        <item>Administration</item>
+        <item>Lookups</item>
+        <item>Reports</item>
+    </string-array>
+    
+    <string-array name="module_inventory_management">
+        <item>Inventory Adjustments</item>
+        <item>Sequencing</item>
+        <item>Stock Counts</item>
+        <item>Item Requests</item>
+        <item>Pick Lists</item>
+        <item>Store Ordering</item>
+        <item>Price Changes</item>
+        <item>Ticketing</item>
+        <item>Reason Codess</item>
+    </string-array>
+    
+    <string-array name="module_shipping_receiving">
+        <item>Direct Delivery</item>
+        <item>Warehouse Delivery</item>
+        <item>Transfers and Transfer Requests</item>
+        <item>Returns</item>
+    </string-array>
+    
+    <string-array name="module_administration">
+        <item>Product Group Administration</item>
+        <item>Ad Hoc Stock Counts</item>
+        <item>SIM Stores</item>
+        <item>Store Administration</item>
+        <item>System Administration</item>
+    </string-array>
+    
+    <string-array name="module_lookups">
+        <item>Look up an Item</item>
+        <item>Look up a Supplier</item>
+        <item>Look up a Container</item>
+    </string-array>
+    
+    <string-array name="module_reports">
+        <item>View Report</item>
+    </string-array>
+    
+    <string-array name="items_UOM">
+        <item>Standard UOM</item>
+        <item>Another Simple UOM</item>
+        <item>Another Type UOM</item>
+    </string-array>
+    <string-array name="items_reason_codes">
+        <item>Stock In</item>
+        <item>Stock Out</item>
+        <item>Admin</item>
+        <item>Store Customer Return</item>
+        <item>Shrinkage</item>
+        <item>Damage Out</item>
+        <item>Damage Hold</item>
+        <item>Theft</item>
+        <item>Store Use</item>
+        <item>Repair Out</item>
+        <item>Repair In</item>
+    </string-array>
+    
+    
+    <string-array name="items_yes_no">
+        <item>Allow micro sequencing?</item>
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+    
+    <string-array name="location_areas">
+        <item>Select Area</item>
+        <item>Shopfloor</item>
+        <item>Backroom</item>
+        <item>Area 1</item>
+        <item>Area 2</item>
+        <item>Area 3</item>
+    </string-array>
+    
+    
+</resources>

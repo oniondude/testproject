@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SIM</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_asdmain">ASDMainActivity</string>
+    <string name="title_activity_list_view">ListViewActivity</string>
+    <string name="title_activity_drawer_menu">DrawerMenuActivity</string>
+    <string name="title_activity_barcode_result">BarcodeResultActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="login_view_enter_your_user_id">Enter your User ID</string>
+    <string name="login_view_enter_your_password">Enter your Password</string>
+    <string name="application_name">SIM</string>
+    <!-- ACTION STRINGS -->
+    <string name="action_view">View</string>
+    <string name="action_update">Update</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_create">Create</string>
+    <string name="action_add_item">Add Item</string>
+    <string name="action_filter">Filter</string>
+    <string name="action_save">Save</string>
+    <string name="action_yes">Yes</string>
+    <string name="action_no">No</string>
+    <!-- LABEL STRINGS -->
+    <string name="label_container">{?}</string>
+    <string name="label_date">Date</string>
+    <string name="label_user">User</string>
+    <string name="label_adjustment_number">Adjustment no.</string>
+    <string name="label_status">Status</string>
+    <string name="title_activity_inventory_adjustments_create">InventoryAdjustmentsCreate</string>
+    <string name="title_activity_inventory_adjustment_add_item">InventoryAdjustmentAddItem</string>
+    <!-- HINT STRINGS -->
+    <string name="hint_item">Item</string>
+    <string name="hint_item_description">Item Desription</string>
+    <string name="hint_UOM">UOM</string>
+    <string name="hint_pack_size">Pack Size</string>
+    <string name="hint_pack_quantity">Quantity</string>
+    <string name="hint_pack_reason">Reason</string>
+    <string name="hint_select_UOM">Select UOM</string>
+    <string name="hint_select_reason">Select Reason</string>
+    <string name="hint_Location">Location</string>
+    <string name="hint_area">Area</string>
+    <string name="hint_micro_sequence">Micro Sequence</string>
+    <!-- CONFIRMATION STRINGS -->
+    <string name="confirm_delete_location_title">Delete Location</string>
+    <string name="confirm_delete_location">Are you sure you want to delete the selected locations now?</string>
+    
+    <string name="confirm_save_inventory_adjustments_title">Create Adjustment</string>
+    <string name="confirm_save_inventory_adjustments">Are you sure you want save this inventory adjustment?</string>
+    
+    
+    <string name="title_activity_inventory_adjustment_update">InventoryAdjustmentUpdate</string>
+    <string name="title_activity_inventory_adjustments_filter">InventoryAdjustmentsFilter</string>
+    <string name="title_activity_sequencing_add_location">Add Location</string>
+
+</resources>

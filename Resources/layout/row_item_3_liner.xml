@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+   	android:padding="15dp"
+    android:background="@drawable/row_item_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/titleLayout">
+
+        <ImageButton
+            android:id="@+id/expandButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/app_name"
+            android:background="@drawable/ic_action_expand" />
+
+        <TextView
+            android:id="@+id/rowFirstTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/label_container"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+        
+    </RelativeLayout>
+
+
+
+
+
+<View
+    android:id="@+id/lineSeperator"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_below="@+id/titleLayout"
+    android:background="#999999"
+    android:paddingTop="8dp" />
+
+<TextView
+    android:id="@+id/rowSecondTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/lineSeperator"
+    android:layout_below="@+id/lineSeperator"
+    android:layout_centerVertical="true"
+    android:text="@string/label_container"
+    android:textColor="@color/gray_dark"
+    android:textSize="14sp" 
+    android:paddingTop="10dp"/>
+
+<TextView
+    android:id="@+id/rowThirdTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:text="@string/label_container"
+    android:textColor="@color/gray_dark"
+    android:textSize="14sp" 
+    android:paddingTop="10dp"
+    android:layout_below="@+id/rowSecondTextView"/>
+
+
+
+</RelativeLayout>

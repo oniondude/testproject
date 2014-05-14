@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="match_parent" 
+    android:background="@color/blue_fb_bg"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp" >
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+    <LinearLayout android:id="@+id/menu_ll"
+	        android:orientation="vertical"
+	        android:layout_width="fill_parent" 
+	        android:layout_height="fill_parent"
+	        android:padding="15dp"
+	        android:layout_marginBottom="20dp"
+	        android:background="@drawable/white_with_border_background">
+        
+        	
+				<EditText
+				    android:id="@+id/locationName"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:hint="@string/hint_Location"
+				    android:inputType="text"
+				     />	
+        
+    				
+    			<Spinner
+			    android:id="@+id/area"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:entries="@array/location_areas"
+			    android:prompt="@string/hint_Location"
+			    android:background="@null"
+			    android:layout_marginTop="10dp"/>
+    		
+    		
+    			<Spinner
+			    android:id="@+id/microSequence"
+			    android:entries="@array/items_yes_no"
+			    android:prompt="@string/hint_micro_sequence"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="10dp" 
+			    android:background="@null"/>
+    		
+				    
+    			
+    </LinearLayout>
+	<Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/menu_ll"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_blue_background"
+        android:text="Add"
+        android:textColor="@android:color/white" android:onClick="addLocation"/>
+	</RelativeLayout>
+</ScrollView>

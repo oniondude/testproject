@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="match_parent" 
+    android:background="@color/blue_fb_bg"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp" >
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" 
+	    >
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:orientation="vertical" android:id="@+id/formHolder">
+	
+		   <LinearLayout
+		       android:id="@+id/adjustmentDetails"
+		       android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:background="@drawable/white_with_border_background"
+		       android:orientation="vertical"
+		       android:padding="15dp" >
+				
+		       <LinearLayout 
+		           android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:id="@+id/linearFromDate" android:paddingBottom="10dp">
+		          
+			       <TextView
+			            android:id="@+id/labelFromdate"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:text="From:"
+			            android:layout_toLeftOf="@+id/fromDate"
+			            android:textColor="@android:color/black"
+			            android:textSize="14sp" />
+			       
+			        <EditText
+			            android:layout_weight="1"
+				         android:id="@+id/fromDate"
+				         android:layout_width="150dp"
+				         android:layout_height="wrap_content"
+				         android:editable="false"
+				         android:focusable="false"
+				         android:text="6 / 3 / 2014">
+					</EditText>
+			     
+			     	<ImageButton
+			         android:id="@+id/fromDateButton"
+			         android:layout_width="wrap_content"
+					 android:layout_height="wrap_content"
+			         android:layout_alignBottom="@+id/fromDate"
+			         android:layout_toRightOf="@+id/fromDate"
+			         android:contentDescription="@null"
+			         android:cropToPadding="true"
+			         android:src="@drawable/ic_date_picker" android:background="#00000000"/>
+		     </LinearLayout>
+		    
+		     <LinearLayout 
+		           android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:id="@+id/linearToDate" >
+		
+				     <TextView
+				         android:id="@+id/labelTodate"
+				         android:layout_width="wrap_content"
+				         android:layout_height="wrap_content"
+				         android:layout_toLeftOf="@+id/toDate"
+				         android:layout_weight="1"
+				         android:text="To:"
+				         android:textColor="@android:color/black"
+				         android:textSize="14sp" />
+				       
+				        <EditText
+				            android:id="@+id/toDate"
+				            android:layout_width="150dp"
+				            android:layout_height="wrap_content"
+				            android:layout_weight="0.69"
+				            android:editable="false" 
+				            android:focusable="false" >
+
+						</EditText>
+				     
+				     <ImageButton
+				         android:id="@+id/toDateButton"
+				         android:layout_width="wrap_content"
+				         android:layout_height="wrap_content"
+				         android:layout_alignBottom="@+id/toDate"
+				         android:layout_toRightOf="@+id/toDate"
+				         android:background="#00000000"
+				         android:contentDescription="@null"
+				         android:cropToPadding="true"
+				         android:src="@drawable/ic_date_picker" />
+
+		      </LinearLayout>
+		  </LinearLayout>
+			
+		   
+		   <LinearLayout
+		       android:id="@+id/adjustmentDetails"
+		       android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:background="@drawable/white_with_border_background"
+		       android:orientation="vertical"
+		        android:paddingTop="15dp"
+		       android:paddingRight="15dp"
+		       android:paddingLeft="15dp"
+		       android:paddingBottom="15dp"  android:layout_marginTop="10dp">
+		      
+		       <EditText
+				    android:id="@+id/adjustment"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_above="@+id/itemwithscan"
+				    android:hint="Enter Adjustment #"
+				    android:inputType="number" />
+		       
+		        <LinearLayout  android:orientation="horizontal"
+		           android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:id="@+id/itemwithscan" android:layout_marginTop="10dp">
+			       <EditText
+					    android:id="@+id/item"
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:hint="Enter Item #"
+					    android:inputType="number" />
+			        <ImageButton
+				         android:onClick="scanItem"
+				         android:id="@+id/toDateButton"
+				         android:layout_width="wrap_content"
+						 android:layout_height="wrap_content"
+				         android:contentDescription="@null"
+				         android:cropToPadding="true"
+				         android:src="@drawable/barcode_scanner" android:background="#00000000" android:layout_marginRight="10dp"/>
+		       </LinearLayout>
+		
+		       	
+		       <Spinner
+			    android:id="@+id/Reason"
+			    android:entries="@array/items_reason_codes"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:spinnerMode="dropdown" 
+			    android:background="#00000000"
+			    android:layout_marginTop="10dp"/>
+		       
+		       <Spinner
+			    android:id="@+id/Reason"
+			    android:entries="@array/items_reason_codes"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:spinnerMode="dropdown" 
+			    android:background="#00000000"
+			    android:layout_marginTop="10dp"/>
+		       
+		       <Spinner
+			    android:id="@+id/Reason"
+			    android:entries="@array/items_reason_codes"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:spinnerMode="dropdown"  
+			    android:background="#00000000" 
+			    android:layout_marginTop="10dp"
+			    android:prompt="@string/hint_select_reason"/>
+		       
+		    </LinearLayout>
+			
+		  
+			
+	</LinearLayout>
+		<Button
+		       android:id="@+id/saveButton"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:background="@drawable/button_blue_background"
+		       android:onClick="searchResult"
+		       android:text="Search"
+		       android:layout_marginTop="10dp"
+		       android:layout_below="@+id/formHolder"
+		       android:layout_centerHorizontal="true"
+		       android:layout_alignParentBottom="true"
+		       android:textColor="@android:color/white" />
+	</RelativeLayout>
+	
+</ScrollView>

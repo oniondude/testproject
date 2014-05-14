@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="match_parent" 
+    android:background="@color/blue_fb_bg"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp" >
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+    <LinearLayout android:id="@+id/menu_ll"
+	        android:orientation="vertical"
+	        android:layout_width="fill_parent" 
+	        android:layout_height="fill_parent"
+	        android:padding="15dp"
+	        android:layout_marginBottom="20dp"
+	        android:background="@drawable/white_with_border_background">
+        
+        	
+				<EditText
+				    android:id="@+id/item"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:hint="@string/hint_item"
+				    android:inputType="text"
+				     />	
+        
+    				
+    			<EditText
+				    android:id="@+id/itemDescription"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:hint="@string/hint_item_description"
+				    android:inputType="text" android:layout_marginTop="10dp"/>
+    			
+				
+    			<Spinner
+			    android:id="@+id/spinnerUOM"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:entries="@array/items_UOM"
+			    android:prompt="@string/hint_select_UOM"
+			    android:background="@null"
+			    android:layout_marginTop="10dp"/>
+    			
+    			
+    			<EditText
+				    android:id="@+id/packSize"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:hint="@string/hint_pack_size"
+				    android:inputType="numberDecimal" 
+				     android:layout_marginTop="10dp"/>
+    			
+    			<EditText
+				    android:id="@+id/Quatity"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:hint="@string/hint_pack_quantity"
+				    android:inputType="number"
+				     android:layout_marginTop="10dp"/>
+    		
+    		
+    			<Spinner
+			    android:id="@+id/Reason"
+			    android:entries="@array/items_reason_codes"
+			    android:prompt="@string/hint_select_reason"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="10dp" 
+			    android:background="@null"/>
+    		
+				    
+    			
+    </LinearLayout>
+	<Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/menu_ll"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_blue_background"
+        android:text="Add"
+        android:textColor="@android:color/white" android:onClick="addItem"/>
+	</RelativeLayout>
+</ScrollView>

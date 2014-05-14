@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#1D83D6</color>
+    <color name="blue_light">#70b0e0</color>
+    <color name="blue_dark">#207cca</color>
+    <color name="blue_fb_bg">#d3d7dc</color>
+    <color name="gray">#DFE4E9</color>
+    <color name="gray_light">#f6f6f6</color>
+    <color name="gray_dark">#999999</color>
+    <color name="gray_fb_bg">#dfe3ee</color>
+</resources>
