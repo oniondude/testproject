@@ -17,8 +17,8 @@ namespace SIM
 		private Context _Context;
 		private DrawerLayout navigationDrawer;
 
-		public ExpandableChildClickListener(Context mContext){
-			_Context = mContext;
+		public ExpandableChildClickListener(Context moContext){
+			_Context = moContext; 
 		}
 
 
